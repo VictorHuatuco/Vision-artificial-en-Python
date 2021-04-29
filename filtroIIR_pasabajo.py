@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 f = 400
 Wn = f*2*np.pi
-N = 2
+N = 1
 
 b2, a2 = signal.iirfilter(N, Wn, btype = "lowpass",analog = True,ftype= "butter")
 Ws2,Hs2 = signal.freqs(b2,a2)
